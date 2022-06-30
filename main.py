@@ -8,9 +8,8 @@ def main():
 	dp = updater.dispatcher
 
 	dp.add_handler(CommandHandler('info', info_cmd))
-	dp.add_handler(CommandHandler('reboot', reboot_cmd))
+	dp.add_handler(CommandHandler('nload', reboot_cmd))
 	dp.add_handler(CommandHandler('restart_service', restart_service_cmd, pass_args=True))
-	dp.add_handler(CommandHandler('upgrade'), upgrade_cmd)
 	#JobQueue
 	j = updater.job_queue
 
